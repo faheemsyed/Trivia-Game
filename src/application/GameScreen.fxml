@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <Label fx:id="score" layoutX="535.0" layoutY="12.0" text="0" textFill="#f3ff22">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="12.0" text="Score:" textFill="#f3ff22">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" layoutX="909.0" layoutY="12.0" text="30" textFill="#08c61b">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="question" layoutX="7.0" layoutY="112.0" text="Name the Portuguese navigator and explorer who led the first expedition to circumnavigate the earth in 1519?" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="answer1" layoutX="13.0" layoutY="175.0" mnemonicParsing="false" onAction="#selectAnswer1" text="Answer1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="answer2" layoutX="13.0" layoutY="275.0" mnemonicParsing="false" onAction="#selectAnswer2" text="Answer2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="answer3" layoutX="13.0" layoutY="375.0" mnemonicParsing="false" onAction="#selectAnswer3" text="Answer3">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="answer4" layoutX="13.0" layoutY="475.0" mnemonicParsing="false" onAction="#selectAnswer4" text="Answer4">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="enter" layoutX="786.0" layoutY="526.0" mnemonicParsing="false" onAction="#checkAnswer" style="-fx-background-color: white;" text="Final Answer" textFill="#00d1f2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="name" layoutX="10.0" layoutY="11.0" text="Name" textFill="#00d1f2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

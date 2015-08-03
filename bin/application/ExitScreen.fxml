@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExitController">
+   <children>
+      <Label fx:id="winner" alignment="TOP_CENTER" layoutX="366.0" layoutY="10.0" text="Player name wins" textFill="#00d1f2" underline="true">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="playBtn" layoutX="275.0" layoutY="510.0" mnemonicParsing="false" onAction="#play" text="Play again?" textFill="#00d1f2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitBtn" layoutX="633.0" layoutY="510.0" mnemonicParsing="false" onAction="#exit" prefHeight="77.0" prefWidth="192.0" text="Exit" textFill="#00d1f2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Separator layoutX="550.0" layoutY="85.0" orientation="VERTICAL" prefHeight="412.0" prefWidth="4.0" />
+      <Label fx:id="player1" layoutX="233.0" layoutY="86.0" text="Player1">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2" layoutX="743.0" layoutY="86.0" text="Player2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="score1" layoutX="10.0" layoutY="160.0" text="Score/Correct Answers: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutY="85.0" prefHeight="4.0" prefWidth="1100.0" style="-fx-border-color: white;" />
+      <Separator layoutY="145.0" prefHeight="4.0" prefWidth="1100.0" style="-fx-border-color: white;" />
+      <Label fx:id="score2" layoutX="560.0" layoutY="160.0" text="Score/Correct Answers: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrong1" layoutX="10.0" layoutY="235.0" text="Wrong Answers: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrong2" layoutX="560.0" layoutY="235.0" text="Wrong Answers: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="total1" layoutX="10.0" layoutY="310.0" text="Total questions answered: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="total2" layoutX="560.0" layoutY="310.0" text="Total questions answered: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="percent1" layoutX="10.0" layoutY="385.0" text="Percentage correct: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="percent2" layoutX="560.0" layoutY="385.0" text="Percentage correct: ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutY="495.0" prefHeight="4.0" prefWidth="1100.0" style="-fx-border-color: white;" />
+   </children>
+</AnchorPane>

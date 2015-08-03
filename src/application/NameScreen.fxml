@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NameController">
+   <children>
+      <Label fx:id="player" layoutX="68.0" layoutY="130.0" text="Player 1" textFill="#00d1f2">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerName" layoutX="482.0" layoutY="235.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="enter" layoutX="822.0" layoutY="224.0" mnemonicParsing="false" onAction="#enterName" text="Enter" textFill="#00d1f2">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Label layoutX="110.0" layoutY="230.0" text="Enter your name:" textFill="#00d1f2">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="empty" layoutX="490.0" layoutY="189.0" text="NAME CANNOT BE EMPTY" textFill="RED" underline="true" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

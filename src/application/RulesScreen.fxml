@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RulesController">
+   <children>
+      <Label layoutX="417.0" layoutY="-18.0" text="Rules" textFill="#00d1f2" underline="true">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Circle fill="#010b14" layoutX="23.0" layoutY="145.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="44.0" layoutY="126.0" text="Each player will have 30 seconds to answer as many questions as possible." textFill="#fffdfd">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Circle fill="#010b14" layoutX="24.0" layoutY="268.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="45.0" layoutY="249.0" text="1 point will be rewarded for every correct answer." textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Circle fill="#010b14" layoutX="23.0" layoutY="381.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="45.0" layoutY="362.0" text="The player with the most points in the end wins." textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="714.0" layoutY="440.0" mnemonicParsing="false" onAction="#play" style="-fx-background-color: white;" text="Got it" textFill="#00d1f2">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
